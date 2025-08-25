@@ -1,0 +1,226 @@
+<!--
+    COMO ATUALIZAR O PORTFÓLIO:
+    1.  TEXTOS: Para alterar qualquer texto, procure o conteúdo diretamente neste arquivo HTML e substitua-o.
+        Exemplo: Para mudar o título, encontre "Cientista da Computação" e altere o texto.
+    2.  PROJETOS: Para adicionar um novo projeto:
+        - Vá para a seção com o id "projetos".
+        - Copie o bloco de código de um "projeto-card".
+        - Cole o bloco copiado e altere o título, a descrição, o link do GitHub e a imagem (src="assets/nome-da-imagem.png").
+    3.  IMAGENS: Adicione suas imagens (foto de perfil, logos de projetos) na pasta "assets" e atualize o caminho no HTML.
+    4.  LINKS: Para atualizar links (LinkedIn, GitHub, etc.), encontre a tag <a> correspondente e altere o atributo "href".
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
+    <title>Gabriel Geovani | Portfólio</title>
+    <meta name="description" content="Portfólio de Gabriel Geovani, cientista da computação com foco em desenvolvimento de software, programação e soluções digitais.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>GG</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Icons (Boxicons) -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- CABEÇALHO E MENU DE NAVEGAÇÃO -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Gabriel Geovani</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#sobre" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#competencias" class="nav__link">Competências</a></li>
+                    <li class="nav__item"><a href="#projetos" class="nav__link">Projetos</a></li>
+                    <li class="nav__item"><a href="#experiencia" class="nav__link">Experiência</a></li>
+                    <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SEÇÃO INICIAL (HERO) -->
+        <section class="home" id="home">
+            <div class="home__container container">
+                <h1 class="home__title">Gabriel Geovani Celestino Nunes</h1>
+                <h2 class="home__subtitle">Cientista da Computação</h2>
+                <p class="home__description">
+                    Cientista da computação em formação, com interesse em programação e soluções digitais. Motivado a aplicar conhecimentos adquiridos em projetos práticos e colaborativos. Buscando constantemente por aprendizado e aperfeiçoamento profissional.
+                </p>
+                <a href="https://github.com/GGeovani" target="_blank" class="button">
+                    <i class='bx bxl-github'></i> Acessar GitHub
+                </a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE -->
+        <section class="sobre section" id="sobre">
+            <div class="sobre__container container grid">
+                <div class="sobre__image">
+                    <!-- COLOQUE SUA FOTO AQUI -->
+                    <img src="assets/foto1.jpeg" alt="Ilustração de perfil de Gabriel Geovani">
+                </div>
+                <div class="sobre__data">
+                    <h2 class="section__title">Sobre Mim</h2>
+                    <p class="sobre__text">
+                        Olá! Sou Gabriel, um entusiasta da tecnologia cursando Bacharelado em Ciência da Computação. Minha jornada acadêmica e profissional tem sido focada em absorver o máximo de conhecimento e aplicá-lo na criação de soluções eficientes e inovadoras. Tenho um perfil proativo, organizado e colaborativo, sempre pronto para enfrentar novos desafios e aprender com eles.
+                    </p>
+                    <p class="sobre__text">
+                        Atualmente, busco oportunidades para aprofundar minhas habilidades em desenvolvimento de software, tanto no front-end quanto no back-end, e contribuir para projetos que gerem impacto positivo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO COMPETÊNCIAS -->
+        <section class="competencias section" id="competencias">
+            <h2 class="section__title">Competências</h2>
+            <div class="competencias__container container grid">
+                <!-- Habilidade 1 -->
+                <div class="competencia-card">
+                    <i class='bx bx-code-alt competencia-icon'></i>
+                    <h3 class="competencia-title">Linguagens</h3>
+                    <p>Java, C++, Python, JavaScript, React, Front-End, Back-End.</p>
+                </div>
+                <!-- Habilidade 2 -->
+                <div class="competencia-card">
+                    <i class='bx bxs-data competencia-icon'></i>
+                    <h3 class="competencia-title">Banco de Dados</h3>
+                    <p>MySQL, SQL.</p>
+                </div>
+                <!-- Habilidade 3 -->
+                <div class="competencia-card">
+                    <i class='bx bx-git-branch competencia-icon'></i>
+                    <h3 class="competencia-title">Ferramentas</h3>
+                    <p>Git, GitHub, Eclipse, VS Code, MySQL WorkBench, Pacote Office.</p>
+                </div>
+                <!-- Habilidade 4 -->
+                <div class="competencia-card">
+                    <i class='bx bx-network-chart competencia-icon'></i>
+                    <h3 class="competencia-title">Outras</h3>
+                    <p>Lógica de Programação, Redes, Manutenção de Computadores.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO PROJETOS -->
+        <section class="projetos section" id="projetos">
+            <h2 class="section__title">Projetos</h2>
+            <div class="projetos__container container grid">
+                <!-- Card de Projeto Exemplo 1 -->
+                <div class="projeto-card">
+                    <img src="assets/placeholder-project.png" alt="Imagem do Projeto 1" class="projeto-img">
+                    <div class="projeto-data">
+                        <h3 class="projeto-title">Nome do Projeto 1</h3>
+                        <p class="projeto-description">Descrição breve do projeto, destacando as tecnologias utilizadas e o objetivo principal.</p>
+                        <a href="#" target="_blank" class="button button--flex">Ver no GitHub <i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <!-- Card de Projeto Exemplo 2 -->
+                <div class="projeto-card">
+                    <img src="assets/placeholder-project.png" alt="Imagem do Projeto 2" class="projeto-img">
+                    <div class="projeto-data">
+                        <h3 class="projeto-title">Nome do Projeto 2</h3>
+                        <p class="projeto-description">Descrição breve do projeto, destacando as tecnologias utilizadas e o objetivo principal.</p>
+                        <a href="#" target="_blank" class="button button--flex">Ver no GitHub <i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <!-- Adicione mais cards de projeto aqui -->
+            </div>
+        </section>
+
+        <!-- SEÇÃO EXPERIÊNCIA E FORMAÇÃO -->
+        <section class="experiencia section" id="experiencia">
+            <h2 class="section__title">Experiência e Formação</h2>
+            <div class="experiencia__container container grid">
+                <!-- Histórico Profissional -->
+                <div class="timeline">
+                    <h3 class="timeline__title">Experiência Profissional</h3>
+                    <div class="timeline__item">
+                        <h4 class="timeline__item-title">Estagiário Suporte Técnico</h4>
+                        <p class="timeline__item-subtitle">Kayros Link (Maio 2025 – Dias atuais)</p>
+                        <ul class="timeline__item-tasks">
+                            <li>Atendimento remoto a clientes para resolução de problemas.</li>
+                            <li>Configuração e provisionamento de novos acessos.</li>
+                            <li>Monitoramento e ajustes na rede para garantir estabilidade.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline__item">
+                        <h4 class="timeline__item-title">Estagiário Contábil</h4>
+                        <p class="timeline__item-subtitle">Agência Contábil (Março 2024 – Novembro 2024)</p>
+                         <ul class="timeline__item-tasks">
+                            <li>Controle de recebimentos de correspondências.</li>
+                            <li>Efetuação de cadastros em sistemas.</li>
+                            <li>Edição e emissão de contratos de prestação de serviços.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Histórico Acadêmico -->
+                <div class="timeline">
+                    <h3 class="timeline__title">Formação Acadêmica</h3>
+                    <div class="timeline__item">
+                        <h4 class="timeline__item-title">Bacharelado em Ciências da Computação</h4>
+                        <p class="timeline__item-subtitle">Centro de Ensino UDF (2022 – 2026)</p>
+                    </div>
+                    <div class="timeline__item">
+                        <h4 class="timeline__item-title">Ensino Médio Técnico em Informática</h4>
+                        <p class="timeline__item-subtitle">SESI/SENAI Sobradinho (2021 – 2023)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO -->
+        <section class="contato section" id="contato">
+            <h2 class="section__title">Entre em Contato</h2>
+            <div class="contato__container container">
+                <p class="contato__description">
+                    Estou aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato através dos canais abaixo.
+                </p>
+                <div class="contato__links">
+                    <a href="mailto:gabrielgeovani.contato@gmail.com" class="contato__link-item">
+                        <i class='bx bx-envelope'></i> gabrielgeovani.contato@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/gabriel-geovani-/" target="_blank" class="contato__link-item">
+                        <i class='bx bxl-linkedin'></i> LinkedIn
+                    </a>
+                     <a href="https://github.com/GGeovani" target="_blank" class="contato__link-item">
+                        <i class='bx bxl-github'></i> GitHub
+                    </a>
+                    <a href="tel:+5561992202016" class="contato__link-item">
+                        <i class='bx bx-phone'></i> (61) 99220-2016
+                    </a>
+                </div>
+                 <p class="contato__location">
+                    <i class='bx bx-map'></i> Sobradinho, Brasília – DF, Brasil
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__text">&copy; Gabriel Geovani – <span id="current-year">2025</span>. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
